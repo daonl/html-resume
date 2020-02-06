@@ -1,0 +1,56 @@
+
+body {
+	font-family: "Lato", sans-serif;
+	font-size: 14px;
+	background-color: #282C49;
+	color: #FBEEC1;
+}
+
+h1, h2 {
+	font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+	color: white;
+}
+
+h2 { 	
+	color: #FE6B04;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+h3 {
+	color: white;
+}
+
+a, a:link, a:visited {
+	color: #7C86A8;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #FFA15E;
+}
+
+a:focus {
+	color: #7C86A8;
+}
+
+a:active {
+	color: pink;
+}
+
+ul {
+  list-style-image: url('images/star.gif');
+}
+
+/* if you want your entire page to be one color instead of just one section, put your background-color 
+in the body tag */
+
+
+/* "double" quotes or 'single' quotes won't matter for css, just as long as you have them */
+/* there are 2 headline 1's affected by this style because i am a rebel and i break the rules */
+/* shelly likes the lato font for body text. apparently some people hate helvetica? try to avoid */
