@@ -1,10 +1,16 @@
+html {
+	margin: 0 0%;
+	padding: 0;
+}
 
 body {
 	font-family: "Lato", sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 14px;
-	background-color: #282C49;
 	color: #FBEEC1;
+	background-color: #282C49;
+	margin: 0;
+	padding: 0;
 }
 
 h1, h2 {
@@ -13,8 +19,6 @@ h1, h2 {
 
 h1 {
 	color: white;
-	background-color: rgba(255, 0, 0, .3);
-	height: 100px;
 	margin: 0px 0px 25px 0px;
 }
 
@@ -27,8 +31,8 @@ h2 {
 }
 
 h3 {
-	color: white;
-	font-weight: 300;
+	color: #F8AC38;
+	font-weight: 400;
 }
 
 a, a:link, a:visited {
@@ -38,6 +42,7 @@ a, a:link, a:visited {
 
 a:hover {
 	text-decoration: underline;
+  	text-decoration-color: #FFD300;
 	color: #FFA15E;
 }
 
@@ -49,13 +54,37 @@ a:active {
 	color: pink;
 }
 
+
 ul {
   list-style-image: url('images/star.gif');
 }
 
+.location {
+	color: white;
+}
+
+#contact, #links, #skills, #education, #experience, #leadership, #courses {
+	line-height: 1.6;
+	margin: 0px 100px 35px 100px;
+}
+
+header {
+
+	width: 100%;
+    height: 50%;
+    margin-bottom: 30px;
+    padding: 20px 0 70px 100px;
+    
+    background: url("images/stringlights.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 100vmax rgba(16, 17, 29, .8);
+}
+
+
 /* if you want your entire page to be one color instead of just one section, put your background-color 
 in the body tag */
-
 
 /* "double" quotes or 'single' quotes won't matter for css, just as long as you have them */
 /* there are 2 headline 1's affected by this style because i am a rebel and i break the rules */
