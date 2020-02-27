@@ -1,0 +1,117 @@
+html {
+	margin: 0 0%;
+	padding: 0;
+}
+
+#layout { 
+	display: grid;
+	grid-template-rows: [header-start] 100px [header-end content-start] 400px [footer-start] 100px;  
+	grid-template-columns: [ads] 200px [main] 1fr [links] 200px;  
+	grid-template-areas: 
+		"header header header" 
+		"ads main links"
+		"footer footer footer";
+}
+
+#one { grid-area: header; }
+#two { grid-area: ads; }
+#three { grid-area: main; }
+#four { grid-area: links; }
+#five { grid-area: footer; }
+
+#one { background-color: red; }
+#two { background-color: orange; }
+#three { background-color: green; }
+#four { background-color: blue; }
+#five { background-color: purple; }
+
+body {
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	color: #FBEEC1;
+	background-color: #282C49;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2 {
+	font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+	color: white;
+	margin: 0px 0px 25px 0px;
+}
+
+h2 { 	
+	color: #FE6B04;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 15px;
+	letter-spacing: 5px;
+}
+
+h3 {
+	color: #F8AC38;
+	font-weight: 400;
+}
+
+a, a:link, a:visited {
+	color: #9CA9D3;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+  	text-decoration-color: #FFD300;
+	color: #FFA15E;
+}
+
+a:focus {
+	color: #9CA9D3;
+}
+
+a:active {
+	color: pink;
+}
+
+
+ul {
+  list-style-image: url('images/star.gif');
+}
+
+.location {
+	color: white;
+}
+
+.description::first-letter {
+	font-size: 150%;
+}
+
+#contact, #links, #skills, #education, #experience, #leadership, #courses {
+	line-height: 1.6;
+	margin: 0px 100px 35px 100px;
+}
+
+header {
+
+	width: 100%;
+    height: 50%;
+    margin-bottom: 30px;
+    padding: 20px 0 70px 100px;
+    
+    background: url("images/stringlights.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 100vmax rgba(16, 17, 29, .8);
+}
+
+
+/* if you want your entire page to be one color instead of just one section, put your background-color 
+in the body tag */
+
+/* "double" quotes or 'single' quotes won't matter for css, just as long as you have them */
+/* there are 2 headline 1's affected by this style because i am a rebel and i break the rules */
+/* shelly likes the lato font for body text. apparently some people hate helvetica? try to avoid */
