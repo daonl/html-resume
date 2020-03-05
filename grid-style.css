@@ -5,27 +5,148 @@ html {
 
 #layout { 
 	display: grid;
-	grid-template-rows: [header-start] 100px [header-end content-start] 400px [footer-start] 100px;  
-	grid-template-columns: [ads] 200px [main] 1fr [links] 200px;  
-	grid-template-areas: 
-		"header header header" 
-		"ads main links"
-		"footer footer footer";
+	grid-template-rows: 100px 500px 50px 1fr 50px 1fr 50px 1fr;  
+	grid-template-columns: 1fr 1fr 1fr;  
 }
 
-#one { grid-area: header; }
-#two { grid-area: ads; }
-#three { grid-area: main; }
-#four { grid-area: links; }
-#five { grid-area: footer; }
 
-#one { background-color: red; }
-#two { background-color: orange; }
-#three { background-color: green; }
-#four { background-color: blue; }
-#five { background-color: purple; }
+#header { 
+	grid-row-start: 1;  
+	grid-row-end: 2;
+	grid-column-start: 1;  
+	grid-column-end: 4;
+}
 
-body {
+#photo { 
+	grid-row-start: 2;  
+	grid-row-end: 3;  
+	grid-column-start: 1;  
+	grid-column-end: 2;
+}
+
+#contact { 
+	grid-row-start: 2;  
+	grid-row-end: 3;  
+	grid-column-start: 2;  
+	grid-column-end: 3;
+}
+#links {  
+	grid-row-start: 2;  
+	grid-row-end: 3;  
+	grid-column-start: 3;  
+	grid-column-end: 4;
+}
+
+#skills { 
+	grid-row-start: 3;  
+	grid-row-end: 4;  
+	grid-column-start: 1;  
+	grid-column-end: 3;
+}
+
+#education {
+	grid-row-start: 3;  
+	grid-row-end: 4;  
+	grid-column-start: 3;  
+	grid-column-end: 4;
+}
+
+#professional {
+	grid-row-start: 4;  
+	grid-row-end: 5;  
+	grid-column-start: 1;  
+	grid-column-end: 2;
+}
+
+#ux {
+	grid-row-start: 4;
+	grid-row-end: 5;  
+	grid-column-start: 2;  
+	grid-column-end: 3;
+}
+
+#smad {
+	grid-row-start: 4; 
+	grid-row-end: 5;  
+	grid-column-start: 3;  
+	grid-column-end: 4;
+}
+
+#experience {
+	grid-row-start: 5;  
+	grid-row-end: 6;  
+	grid-column-start: 1;  
+	grid-column-end: 4;
+}
+
+#intern {
+	grid-row-start: 6;  
+	grid-row-end: 7;  
+	grid-column-start: 1;  
+	grid-column-end: 2;
+}
+
+#consultant {
+	grid-row-start: 6;  
+	grid-row-end: 7;  
+	grid-column-start: 2;  
+	grid-column-end: 3;
+}
+
+#assistant {
+	grid-row-start: 6;  
+	grid-row-end: 7;  
+	grid-column-start: 3;  
+	grid-column-end: 4;
+}
+
+#leadership {
+	grid-row-start: 7;  
+	grid-row-end: 8;  
+	grid-column-start: 1;  
+	grid-column-end: 2;
+}
+
+#pr {
+	grid-row-start: 8;  
+	grid-row-end: 9;  
+	grid-column-start: 1;  
+	grid-column-end: 2;
+}
+
+#courses {
+	grid-row-start: 7;  
+	grid-row-end: 8;  
+	grid-column-start: 2;  
+	grid-column-end: 4;
+}
+
+#foundations {
+	grid-row-start: 8; 
+	grid-row-end: 9;  
+	grid-column-start: 2;  
+	grid-column-end: 3;
+}
+
+#interaction {
+	grid-row-start: 8;  
+	grid-row-end: 9;  
+	grid-column-start: 3;  
+	grid-column-end: 4;
+}
+
+
+#header { background-color: red; }
+#contact { background-color: orange; }
+#links { background-color: green; }
+#skills { background-color: blue; }
+#education { background-color: purple; }
+#experience { background-color: yellow; }
+#leadership { background-color: pink; }
+#courses { background-color: brown; }
+
+
+/*body {
 	font-family: "Lato", sans-serif;
 	font-weight: 300;
 	font-size: 14px;
@@ -106,12 +227,4 @@ header {
     background-position: bottom;
     background-attachment: fixed;
     box-shadow: inset 0 0 0 100vmax rgba(16, 17, 29, .8);
-}
-
-
-/* if you want your entire page to be one color instead of just one section, put your background-color 
-in the body tag */
-
-/* "double" quotes or 'single' quotes won't matter for css, just as long as you have them */
-/* there are 2 headline 1's affected by this style because i am a rebel and i break the rules */
-/* shelly likes the lato font for body text. apparently some people hate helvetica? try to avoid */
+}*/
