@@ -8,16 +8,16 @@ html {
 	grid-template-rows: 100px 500px 50px 1fr 50px 1fr 50px 1fr;  
 	grid-template-columns: 1fr 1fr 1fr;  
 	padding: 0;
-	margin: 50px;
 	border-radius: 10px;
 }
 
 
-#header { 
+header { 
 	grid-row-start: 1;  
 	grid-row-end: 2;
 	grid-column-start: 1;  
 	grid-column-end: 4;
+	padding-left: 90px;
 }
 
 #photo { 
@@ -138,6 +138,13 @@ html {
 	grid-column-end: 4;
 }
 
+#hyperlinks {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
 
 /*#header { background-color: red; }
 #contact { background-color: orange; }
@@ -217,6 +224,8 @@ ul {
 	line-height: 1.6;
 	/*margin: 0px 100px 35px 100px;*/
 	padding: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
 #skills, #education, #experience, #leadership, #courses {
@@ -225,7 +234,6 @@ ul {
 
 #skills {
 	background-color: rgba(16, 17, 29, .7);
-	margin-right: 40px;
 }
 
 #education {
@@ -250,6 +258,12 @@ ul {
 	flex-direction: row;
 	justify-content: flex-end;
 	/*align-content: space-between;*/
+}
+
+#hyperlinks a {
+	width: 25%;
+	padding-top: 20px;
+	padding-right: 20px;
 }
 
 #photo img {
